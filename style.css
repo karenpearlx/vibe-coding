@@ -3322,3 +3322,13 @@ nav,
 html, body { max-width: 100%; }
 .hero, .work, .services, .about-new, .method, .contact-new,
 .process-section, .stack-section, .trust-banner { overflow-x: hidden; }
+
+/* Extra strong mobile hide for hero-floats - defense in depth */
+@media (max-width: 900px) {
+  .hero-floats, .float-badge, .fb-1, .fb-2, .fb-3, .fb-4 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
